@@ -1,3 +1,5 @@
+import time
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
@@ -5,6 +7,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 driver = webdriver.Chrome()
 driver.get("https://around-v1.nm.tripleten-services.com/signin?lng=en")
+
+time.sleep(2)
 
 # Find the Email field and fill it in
 ...
@@ -23,6 +27,8 @@ element = ...
 
 # Scroll the footer into view
 driver.execute_script(...)
+
+time.sleep(3)
 
 # Check that the footer contains the string 'Around'
 assert ...
