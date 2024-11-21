@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome()
 
 # Open the specified URL in the browser
-driver.get("SERVER URL")
+driver.get(" SERVER URL ")
 
 # Pause execution for 2 seconds to allow the page to load fully
 time.sleep(2)
