@@ -7,14 +7,14 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome()
 
 # Open the specified URL in the browser
-driver.get("https://around-v1.nm.tripleten-services.com/signin?lng=en")
+driver.get("SERVER URL")
 
 # Pause execution for 2 seconds to allow the page to load fully
 time.sleep(2)
 
-# Find the email input field and password input field using their IDs
-email = driver...
-password = driver...
+# Find the FROM input field and TO input field using their IDs
+from_field = driver...
+to_field = driver...
 
 # Test the placeholder attribute for each input field to ensure they display the correct text
 assert ...
