@@ -12,25 +12,25 @@ driver.get(" SERVER URL ")
 time.sleep(2)
 
 # Find the FROM field and fill it in
-driver.find_element(By.ID, "from").send_keys("East 2nd Street, 601")
+driver...
 
 # Find the TO field and fill it in
-driver.find_element(By.ID, "to").send_keys("1300 1st St")
+driver...
 
 time.sleep(2)
 
 # Find the "Call a taxi" button and click on it
-driver.find_element(By.XPATH, "//button[@class='button round']").click()
+driver...
 
 # Add an explicit wait for the field to load
-WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located((By.ID, "comment")))
+WebDriverWait(...).until(...)
 
 # Write a comment to the driver
-driver.find_element(By.ID, "comment").send_keys("Hello")
+driver...
 
 time.sleep(2)
 
 # Check that your comment is what you expect it to be
-assert driver.find_element(By.ID, "comment").get_attribute("value") == "Hello"
+assert ...
 
 driver.quit()
