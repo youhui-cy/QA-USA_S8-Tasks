@@ -2,27 +2,27 @@ import time
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support.wait import WebDriverWait
 
 driver = webdriver.Chrome()
-driver.get("https://around-v1.nm.tripleten-services.com/signin?lng=en")
+driver.get(" SERVER URL ")
+
+# Pause execution for 2 seconds to allow the page to load fully
+time.sleep(2)
+
+# Find the FROM field and fill it in
+driver...
+
+# Find the TO field and fill it in
+driver...
 
 time.sleep(2)
 
-# Find the Email field and fill it in
-...
+# Get the text from "Fastest" mode
+mode = ...
 
-# Find the Password field and fill it in
-...
+time.sleep(2)
 
-# Find the Login button and click on it
-...
-
-# Add an explicit wait for the page to load
-WebDriverWait(...).until(...)
-
-# Find the button, retrieve its text, and check that the text value is 'Log out'
+# Assert that the text of the mode variable is "Fastest"
 assert ...
 
 driver.quit()
