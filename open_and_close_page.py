@@ -4,10 +4,10 @@ driver = webdriver.Chrome()
 driver.maximize_window()
 
 # Open the test stand page
-driver.get('https://www.google.com/imghp')
+driver...
 
 # Check that /signin was added to the URL
-assert '/imghp' in driver.current_url
+assert ...
 
 # Close the browser
-driver.quit()
+driver...
